@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 20px;
+
+    width: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+
+}
+.logo{
+    background-image: url('logo.png');
+    width: 100%;
+    height: auto;
+}
+.logo3{
+    display: flex;
+}
+.common-block{
+
+}
