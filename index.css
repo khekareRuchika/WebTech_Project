@@ -199,14 +199,43 @@
     bottom: 550px;
 }
 
-/* footer */
-.foot{
+
+/* footer - start */
+footer {
+    padding: 50px 30px;
     background-color: #272727;
-    height: 490px;
-    width: 100%;
-}
-.foot4{
-    color: ;
+    color: white;
+  }
+  
+  footer .footer-top {
     display: flex;
-    justify-content: space-evenly;
-}
+    flex-direction: row;
+    margin: 20px 0px;
+  }
+  footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .footer-mid {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .footer-bottom .fb-one {
+    margin: 20px 0px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .footer-links {
+    width: 25%;
+    /* border: 1px dashed; */
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  footer img {
+    height: 30px;
+  }
+  
+  /* footer - end */
