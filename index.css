@@ -3,6 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.main-div{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
 #container{
     height: 30px;
     width: auto;
@@ -11,72 +16,48 @@
     color: white;
     
 }
+
 .navbar{
-    background-color: white;
+    /* background-color: blue; */
     color: black;
     display: flex;
     justify-content: space-evenly;
     height: 69px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     
+
 
 }
 .dropdown{
     padding-bottom: 10px;
+    padding-top: 10px;
     width: 30%;
-    display: flex;
-    position: relative;
-    justify-content: space-evenly;
-}
-.dropdown-button{
-    background-color: white;
-    border: none;
-}
-.dropdown-content{
-    width: 100%;
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a{
     color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown-content ul{
     display: flex;
     justify-content: space-evenly;
 }
-.dropdown-content ul a{
-    display: block;
-}
 
-
-.dropdown:hover .dropdown-content{
-    display: block;
-}
-.nav{
+/* .nav{
     padding-top: 18px;
-}
+} */
 .logos{
     display: flex;
     justify-content: space-evenly;
     width: 20%;
+    
 }
 .logo1{
-    width: auto;
-    height: 12rem;
+   
+    height: AUTO;
     width: 25%;
+    
    
 }
 .logo2{
     
     width: 12%;
     height: auto;
+    
 }
 
 .common-block{
@@ -85,6 +66,9 @@
 }
 
 .body1{
+    margin-top: 50px;
+    padding: 0px 160px;
+
     
 
 }
@@ -94,8 +78,35 @@
     border-radius: 5px;
 
 }
+.body21{
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.body21 div{
+    width: 23%;
+}
+
+.body21 img{
+    width: 24vw;
+}
+
+.body21 p{
+    margin-left: 120px;
+    font-weight: 700;
+}
+
+.icon{
+    margin-top: 40px;
+    margin-left: 280px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 4px 4px;
+}
 /* body2 */
+.body2{
+    margin-top: 20px;
+}
 .first{
     display: flex;
     justify-content: space-evenly;
@@ -108,38 +119,58 @@
     width: 200px;
     font-size: 20px;
     font-weight: 700;
-    
-    padding-top: 0.8rem; 
-    padding-left: 3rem; 
+    box-shadow: 2px 2px 0.5px 1px #111111;
+    padding-top: 0.6rem; 
+    padding-left: 2.6rem; 
+    margin-top: 1.5rem;
     
 }
 .bshadow:hover{
-    background-color: grey;
+    background-color: #333333;
+    color: white;
+    border: 1px solid #333333;
+    box-shadow: 2px 2px 0.5px 1px #333333;
+
+    
     
 }
 
 /* Body4 */
 .body-box{
+    padding-top: 0px;
+    margin-top: 3px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-box{
+    background-color: white;
+    color: black;
 }
 
 .body4{
-    width: 80rem;
+    width: 100vw;
     height: 30rem;
     position: relative;
-    left: 2.5%;
     transform: skewY(4.6deg);
+    margin-top: 35px;
+    margin-bottom: 0px;
+    
    
 }
+.finalb4{
+
+}
 .circle{
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     
 }
 .circle1{
     position: relative;
-    bottom: 400px;
+    top: 6rem;
     background-color: orange;
     height: 250px;
     width: 250px;
@@ -147,7 +178,7 @@
 }
 .circle2{
     position: relative;
-    bottom: 350px;
+    top: 8rem;
     background-color: rgb(43, 43, 216);
     height: 250px;
     width: 250px;
@@ -155,7 +186,7 @@
 }
 .circle3{
     position: relative;
-    bottom: 300px;
+    top: 10rem;
     background-color: rgb(185, 185, 185);
     height: 250px;
     width: 250px;
@@ -164,20 +195,32 @@
 .image{
     display: flex;
     justify-content: space-evenly;
-    
-    
-    left:20px ;
+    left:20px ; 
 }
 .image1{
-    position: relative;
-    bottom: 670px;
+    position: absolute;
+    left: 12rem;
+    bottom: 9rem;
 }
-.image1 :hover{
-    animation: zoom-in-zoom-out 2s ease-in-out alternate ;
+.image1:hover{
+    animation: zoom-in-zoom-out 2s ease-out alternate ;
     
     
     
 }
+.image2:hover{
+    animation: zoom-in-zoom-out 2s ease-out alternate ;
+    
+    
+    
+}
+.image3:hover{
+    animation: zoom-in-zoom-out 2s ease-out alternate ;
+    
+    
+    
+}
+
 @keyframes zoom-in-zoom-out{
     0%{
         transform: scale(1,1);
@@ -192,13 +235,71 @@
 }
 .image2{
     position: relative;
-    bottom: 610px;
+    bottom: 8rem;
+    left: 17rem;
 }
 .image3{
     position: relative;
-    bottom: 550px;
+    bottom: 5rem;
+    left: 9rem;
 }
 
+.form-div{
+    height: 450px;
+    width: auto;
+    transform: skewY(4.6deg);
+    margin-top: 45px;
+    
+   
+}
+.form-inside{
+    position: relative;
+    bottom: 300px;
+    left: 34%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+form{
+   width: 35%;
+  
+}
+input[type="email"]{
+    width: 20rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 50px;
+ 
+  
+}
+button{
+    display: flex;
+    justify-content: left;
+}
+.submit{
+    /* padding: 5px 5px; */
+    border-radius: 50px;
+    width: 25%;
+    left: 60rem;
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    /* margin: 50px ; */
+    border: none;
+    /* border-radius: 50px; */
+    cursor: pointer;
+    transition-duration: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 95px;
+}
+.submit:hover{
+    background-color: white;
+    color: black;
+
+}
 
 /* footer - start */
 footer {
@@ -207,35 +308,65 @@ footer {
     color: white;
   }
   
-  footer .footer-top {
-    display: flex;
-    flex-direction: row;
-    margin: 20px 0px;
+  .footer-top {
+    width: 80vw;
+    margin-left: 150px;
   }
-  footer .footer-bottom {
-    display: flex;
-    justify-content: space-between;
+  .footer-top p {
+    font-size: 0.9rem;
   }
-  footer .footer-mid {
-    margin: 20px 0px;
-    display: flex;
-    justify-content: space-between;
+  
+  .footer-top h1,
+  h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
   }
-  footer .footer-bottom .fb-one {
-    margin: 20px 0px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
+  
+  .footer-top h2 {
+    margin-top: 35px;
   }
-  .footer-links {
-    width: 25%;
-    /* border: 1px dashed; */
+  
+  .footer-mid{
     display: flex;
-    gap: 20px;
-    flex-direction: column;
   }
-  footer img {
-    height: 30px;
+
+  .foot-logo{
+    margin-right: 75%;
+  }
+
+  .footer-icon img{
+    margin-right: 10px;
+  }
+  .footer-mid1{
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 30px;
+  }
+  
+  .footer-mid1 h1{
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+  }
+  
+  .footer-mid1 p{
+      font-size: 0.9rem;    
+  }
+  
+  .footer-bottom{
+      display: flex;
+  }
+  
+  .fb-one{
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .fb-one p{
+      margin-right: 50px;
+      font-size: 0.85rem;
+      color: grey;
   }
   
   /* footer - end */
