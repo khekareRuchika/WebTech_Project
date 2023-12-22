@@ -14,7 +14,7 @@ body {
 }
 
 .navbar{
-    /* background-color: blue; */
+    background-color: white;
     color: black;
     display: flex;
     justify-content: space-evenly;
@@ -33,9 +33,9 @@ body {
     justify-content: space-evenly;
 }
 
-/* .nav{
+.nav{
     padding-top: 18px;
-} */
+}
 .logos{
     display: flex;
     justify-content: space-evenly;

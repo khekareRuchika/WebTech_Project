@@ -16,9 +16,14 @@
     color: white;
     
 }
-
+header{
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 5;
+}
 .navbar{
-    /* background-color: blue; */
+    background-color: white;
     color: black;
     display: flex;
     justify-content: space-evenly;
@@ -63,6 +68,11 @@
 .common-block{
     background: linear-gradient(90deg,#d11e47,#ef7922);
 
+}
+
+.hero-section{
+    margin-top: 110px;
+    z-index: 2;
 }
 
 .body1{
